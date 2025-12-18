@@ -1,343 +1,242 @@
-# Strata: The AI Builder's OS
+# Strata
 
-### Turn "Random AI Experiments" into a "Strategic AI Portfolio"
+**A framework for building AI correctly and managing it continuously.**
 
-![Strata Philosophy](./assets/diagrams/strata-philosophy.png)
-
-[![GitHub stars](https://img.shields.io/github/stars/maree217/strata-ai-builder?style=social)](https://github.com/maree217/strata-ai-builder/stargazers)
-
----
-
-## 🚀 The Business Reality
-
-**95% of AI projects fail.** 
-
-They fail because business leaders treat AI like a "set and forget" IT project. But AI is a **living capability**. If you aren't managing it as a portfolio, you are losing money, risking data, and falling behind.
-
-**Strata is the first framework built to give you 100% visibility over your entire AI estate.**
+[![GitHub stars](https://img.shields.io/github/stars/maree217/strata?style=social)](https://github.com/maree217/strata/stargazers)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/maree217/strata/tree/main/tools/dashboard)
 
 ---
 
-## 🧠 The Three-Layer Philosophy
+## Assess Your AI Maturity (60 Seconds)
 
-Strata is based on the **Three-Layer Architecture**, a proven framework for building AI that actually works:
+| Question | Yes | No |
+|----------|:---:|:---:|
+| Can you list all your AI initiatives right now? | | |
+| Do you know the ROI of each? | | |
+| Do you review performance monthly? | | |
 
-1.  **Layer 1: Infrastructure** (The Foundation) — Secure cloud, robust API management, and data privacy.
-2.  **Layer 2: Intelligence** (The Brain) — Prompt engineering, model selection, and agentic logic.
-3.  **Layer 3: Experience** (The Delivery) — Sleek dashboards, intuitive apps, and user-centric design.
-
-```
-┌─────────────────────────────────────────────────────────┐
-│                    STRATA LAUNCHPAD                      │
-├─────────────────────────────────────────────────────────┤
-│  🚀 Launchpad        │  Build your first AI prototype in 30s│
-│  📊 Dashboard        │  Financial & Operational oversight  │
-│  🔄 Pipeline         │  Track Idea → Experiment → Live      │
-│  🤖 Gemini AI        │  Automated Strategy & Planning       │
-└─────────────────────────────────────────────────────────┘
-```
+**3 Yes** — You're in the top 5%. Focus on optimization. [Framework](./framework/)
+**1-2 Yes** — You have gaps. Start with visibility. [Assessment](./framework/assessment.md)
+**0 Yes** — You're at risk. Start here. [Why 95% Fail](./philosophy/why-95-percent-fail.md)
 
 ---
 
-## 💼 Why this matters for Leaders
+## The Problem
 
-*   **Risk Management:** See which projects are high-risk (EU AI Act ready).
-*   **Cost Control:** Track API spend and ROI in one place (FinOps).
-*   **Speed to Market:** Move from an idea to a working prototype in minutes using the **Launchpad**.
-*   **Strategic Oversight:** Stop "Shadow AI" and align every initiative with business goals.
+**95% of AI projects fail.**
 
----
-
-## Tech Stack (Google Ecosystem)
-
-| Component | Google Service | Why |
-|-----------|----------------|-----|
-| **Frontend** | React + Vite | Fast, modern, deployable anywhere |
-| **Hosting** | Firebase Hosting | Free tier, global CDN, easy deploys |
-| **Database** | Firestore | Serverless, real-time sync, scales to zero |
-| **Auth** | Firebase Auth | Google SSO, email, enterprise IdP |
-| **AI Generation** | Gemini API | Document generation, analysis |
-| **AI Interaction** | Gemini Live API | Voice/multimodal conversations |
-| **Functions** | Cloud Functions | Serverless backend when needed |
-| **Storage** | Cloud Storage | Generated documents, exports |
-
-**Cost:** Free tier covers most small-medium deployments. Pay-as-you-go scales.
+Not because the technology is bad. Because organizations:
+- Start with shiny demos instead of solid foundations
+- Treat AI as projects that "end" instead of capabilities to operate
+- Have no visibility into what's working across their AI portfolio
 
 ---
 
-## Start Where You Are
+## The Solution
 
-| Your Situation | Start Here | Time to Value |
-|----------------|------------|---------------|
-| "I want to understand AI portfolio thinking" | [Level 0: Learn](./get-started/level-0-understand) | 10 minutes |
-| "I want to track my AI experiments" | [Level 1: Track](./get-started/level-1-track) | 5 minutes |
-| "I want a visual dashboard" | [Level 2: Visualise](./get-started/level-2-visualize) | 15 minutes |
-| "I need real data persistence" | [Level 3: Integrate](./get-started/level-3-integrate) | 1 hour |
-| "I need compliance and governance" | [Level 4: Govern](./get-started/level-4-govern) | As needed |
+Strata provides two things:
+
+### 1. Three-Layer Architecture
+*How to BUILD AI correctly*
+
+```
+Layer 1: Infrastructure  →  Build FIRST   →  30-50% cost savings
+Layer 2: Intelligence    →  Build SECOND  →  2-4x ROI
+Layer 3: Experience      →  Build LAST    →  5-10x ROI
++ Governance throughout
+```
+
+Most projects fail because they start at Layer 3 (the demo). Strata enforces the right sequence.
+
+[Read the full philosophy →](./philosophy/three-layer-architecture.md)
+
+### 2. Portfolio Intelligence
+*How to MANAGE AI continuously*
+
+```
+Idea → Experiment → Deploy → Monitor → Iterate → Monitor → Iterate...
+                              (never ends)
+```
+
+AI isn't a project. It's operational infrastructure. Strata helps you track, measure, and improve continuously.
+
+[Read the full philosophy →](./philosophy/portfolio-intelligence.md)
 
 ---
 
-## Quick Start
+## Proven Approach
 
-### Option A: Deploy to Firebase (Recommended)
+### Industries Using This Framework
+Financial Services | Energy | Healthcare | Government | Manufacturing
 
-```bash
-# Clone the repo
-git clone https://github.com/maree217/strata-ai-builder
-cd strata/dashboard
+### Research Basis
+- Gartner AI Maturity Model
+- McKinsey Strategic AI Framework
+- MIT CISR Enterprise AI Research
+- IBM AI Operating Model
 
-# Install dependencies
-npm install
-
-# Login to Firebase
-npm install -g firebase-tools
-firebase login
-
-# Initialise Firebase project
-firebase init hosting
-# Select: Create a new project or use existing
-# Public directory: dist
-# Single-page app: Yes
-
-# Build and deploy
-npm run build
-firebase deploy
-```
-
-**Your dashboard is now live at:** `https://your-project.web.app`
-
-### Option B: Run Locally First
-
-```bash
-git clone https://github.com/maree217/strata-ai-builder
-cd strata/dashboard
-npm install
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000)
-
-### Option C: Use Templates Only (No Code)
-
-- [AI Idea Canvas](./templates/idea-canvas.md) — Capture AI opportunities
-- [Experiment Tracker](./templates/experiment-log.md) — Log what you're testing
-- [ROI Calculator](./templates/roi-calculator.html) — Estimate business value
-
----
-
-## Gemini AI Features
-
-Strata integrates **Google's Gemini API** for AI-powered capabilities:
-
-### Currently Implemented
-
-| Feature | Gemini Model | Description |
-|---------|--------------|-------------|
-| **Annex IV Doc Generator** | `gemini-2.5-flash` | Auto-generate EU AI Act compliance documentation |
-| **Streaming Output** | Gemini Streaming | Real-time document generation preview |
-
-### Roadmap (Gemini APIs)
-
-| Feature | API | Description |
-|---------|-----|-------------|
-| **Voice Portfolio Review** | Gemini Live API | Talk through your portfolio hands-free |
-| **Initiative Analysis** | Gemini Pro | Analyse initiative health, suggest improvements |
-| **Risk Assessment** | Gemini + Grounding | AI-powered risk classification |
-| **Meeting Summaries** | Gemini Interaction API | Capture portfolio discussions |
-| **Multimodal Input** | Gemini Vision | Upload diagrams, whiteboard photos |
-
-### Setting Up Gemini
-
-1. Get your API key from [Google AI Studio](https://aistudio.google.com/apikey)
-2. Add to your environment:
-   ```bash
-   # .env.local
-   VITE_GEMINI_API_KEY=your_api_key_here
-   ```
-3. For production, use [Firebase environment config](https://firebase.google.com/docs/functions/config-env)
-
----
-
-## The Philosophy
-
-### Why "Strata"?
-
-Strata means *layers*. Successful AI implementation has three layers:
-
-```
-┌─────────────────────────────────────────────────────────┐
-│           LAYER 3: USER EXPERIENCE                       │
-│           What people see and use                        │
-│           Build LAST — requires the foundation           │
-├─────────────────────────────────────────────────────────┤
-│           LAYER 2: INTELLIGENCE                          │
-│           Learning, memory, decisions                    │
-│           Build SECOND — the brain                       │
-├─────────────────────────────────────────────────────────┤
-│           LAYER 1: INFRASTRUCTURE                        │
-│           Reliable, secure, cost-effective               │
-│           Build FIRST — the foundation                   │
-└─────────────────────────────────────────────────────────┘
-```
-
-**Most AI projects fail because they start at Layer 3** (shiny demos) without Layers 1 and 2.
-
-[Read the full philosophy →](./philosophy/three-layers.md)
-
----
-
-## Architecture
-
-### Level 2: Static Dashboard (Default)
-
-```
-┌──────────────┐     ┌──────────────────┐
-│   Browser    │────▶│ Firebase Hosting │
-│   (React)    │     │   (Static CDN)   │
-└──────────────┘     └──────────────────┘
-       │
-       ▼
-┌──────────────┐
-│  Gemini API  │
-│ (AI Studio)  │
-└──────────────┘
-```
-
-**Cost:** Free (Firebase free tier + Gemini API free tier)
-
-### Level 3: With Persistence
-
-```
-┌──────────────┐     ┌──────────────────┐     ┌─────────────┐
-│   Browser    │────▶│ Firebase Hosting │     │  Firestore  │
-│   (React)    │     │   (Static CDN)   │────▶│ (Database)  │
-└──────────────┘     └──────────────────┘     └─────────────┘
-       │                                             │
-       ▼                                             ▼
-┌──────────────┐                           ┌─────────────────┐
-│  Gemini API  │                           │ Firebase Auth   │
-│ (AI Studio)  │                           │ (Google SSO)    │
-└──────────────┘                           └─────────────────┘
-```
-
-**Cost:** ~$0-25/month for most organisations
-
-### Level 4: Enterprise
-
-```
-┌──────────────┐     ┌──────────────────┐     ┌─────────────┐
-│   Browser    │────▶│ Firebase Hosting │────▶│  Firestore  │
-└──────────────┘     └──────────────────┘     └─────────────┘
-       │                    │                        │
-       ▼                    ▼                        ▼
-┌──────────────┐     ┌──────────────────┐     ┌─────────────┐
-│ Gemini APIs  │     │ Cloud Functions  │     │   BigQuery  │
-│ (Full Suite) │     │ (Backend Logic)  │     │ (Analytics) │
-└──────────────┘     └──────────────────┘     └─────────────┘
-                            │
-                            ▼
-                     ┌─────────────────┐
-                     │  Cloud Storage  │
-                     │ (Documents/PDF) │
-                     └─────────────────┘
-```
-
----
-
-## For Non-Technical Leaders
-
-**You don't need to be technical to use Strata.**
-
-### Week 1: Understand
-- Read [Why AI Never Ends](./philosophy/why-ai-never-ends.md) (5 min)
-- Download the [AI Idea Canvas](./templates/idea-canvas.md)
-- List your current AI initiatives
-
-### Week 2: Organise
-- Use the [Prioritisation Matrix](./templates/prioritisation-matrix.md)
-- Identify your top 3-5 priorities
-- Share with your team
-
-### Week 3: Visualise
-- Ask your developer to deploy the dashboard (15 min)
-- Or use the [Google Sheets template](./templates/google-sheets-tracker.md)
-- Present at your next leadership meeting
-
-### Week 4+: Iterate
-- Update monthly
-- Track what's working
-- Add governance when needed
+### What Strata Adds
+- **Business language** instead of technical jargon
+- **Clear sequencing** with layer dependencies
+- **ROI focus** where each layer funds the next
+- **Practical tools** not just theory
 
 ---
 
 ## What's Included
 
-### Templates (No Code Required)
+| Section | Description |
+|---------|-------------|
+| [Philosophy](./philosophy/) | The "why" — understanding the approach |
+| [Framework](./framework/) | The "what" — methodology and guides |
+| [Tools](./tools/) | The "how" — dashboard and templates |
+| [Workshops](./workshops/) | Learning materials for teams |
+| [Governance](./GOVERNANCE.md) | Enterprise compliance guidance |
 
-| Template | Format | Description |
-|----------|--------|-------------|
-| [AI Idea Canvas](./templates/idea-canvas.md) | Markdown/PDF | Capture AI opportunities |
-| [Experiment Log](./templates/experiment-log.md) | Markdown | Track experiments |
-| [Prioritisation Matrix](./templates/prioritisation-matrix.md) | Markdown | Score by value/effort |
-| [Google Sheets Tracker](./templates/google-sheets-tracker.md) | Google Sheets | Full portfolio in a spreadsheet |
-| [ROI Calculator](./templates/roi-calculator.html) | HTML | Interactive value estimation |
+---
 
-### Dashboard Features
+## Quick Start
 
-| Feature | Level 2 | Level 3 | Level 4 |
-|---------|---------|---------|---------|
-| Portfolio overview | ✅ | ✅ | ✅ |
-| Pipeline Kanban | ✅ | ✅ | ✅ |
-| Department views | ✅ | ✅ | ✅ |
+### Option A: Learn First
+1. [Why 95% of AI Projects Fail](./philosophy/why-95-percent-fail.md)
+2. [Three-Layer Architecture](./philosophy/three-layer-architecture.md)
+3. [Portfolio Intelligence](./philosophy/portfolio-intelligence.md)
+
+### Option B: Use Templates (No Code)
+- [AI Idea Canvas](./tools/templates/idea-canvas.md) — Capture opportunities
+- [Experiment Log](./tools/templates/experiment-log.md) — Track experiments
+- [Prioritisation Matrix](./tools/templates/prioritisation-matrix.md) — Score by value/effort
+
+### Option C: Deploy the Dashboard
+
+**One-click deploy:**
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/maree217/strata/tree/main/tools/dashboard)
+
+**Or run locally:**
+
+```bash
+git clone https://github.com/maree217/strata
+cd strata/tools/dashboard
+npm install
+echo "VITE_GEMINI_API_KEY=your_key_here" > .env.local
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173)
+
+Get your Gemini API key from [Google AI Studio](https://aistudio.google.com/apikey).
+
+[Full deployment guide →](./tools/dashboard/README.md)
+
+---
+
+## The Framework
+
+### Self-Assessment
+
+| Question | Your Answer |
+|----------|-------------|
+| How many AI initiatives do you have? | ___ |
+| How many are in production? | ___ |
+| What's the ROI of each? | ___ |
+| Who owns each initiative? | ___ |
+| How often do you review performance? | ___ |
+
+If you struggled to answer any of these, you need Strata.
+
+[Take the full assessment →](./framework/assessment.md)
+
+### Implementation Sequence
+
+```
+┌─────────────────────┐     ┌─────────────────────┐     ┌─────────────────────┐
+│ LAYER 1:            │     │ LAYER 2:            │     │ LAYER 3:            │
+│ Infrastructure      │ ──▶ │ Intelligence        │ ──▶ │ Experience          │
+│                     │     │                     │     │                     │
+│ • Cost optimization │     │ • Data pipelines    │     │ • User interfaces   │
+│ • Security          │     │ • ML operations     │     │ • Chatbots          │
+│ • Monitoring        │     │ • Learning loops    │     │ • Automations       │
+└─────────────────────┘     └─────────────────────┘     └─────────────────────┘
+         ↑                           ↑                           ↑
+    30-50% savings              2-4x ROI                    5-10x ROI
+```
+
+[Full framework guide →](./framework/README.md)
+
+---
+
+## The Dashboard
+
+A visual interface for Portfolio Intelligence:
+
+- **Overview** — Metrics across your AI portfolio
+- **Pipeline** — Track initiatives from Idea → Live
+- **Compliance** — EU AI Act readiness
+- **FinOps** — Cost tracking and ROI
+
+### Features by Implementation Level
+
+| Feature | Static | With Firestore | Enterprise |
+|---------|:------:|:--------------:|:----------:|
+| Portfolio view | ✅ | ✅ | ✅ |
+| Pipeline tracking | ✅ | ✅ | ✅ |
 | Gemini doc generation | ✅ | ✅ | ✅ |
 | Data persistence | — | ✅ | ✅ |
 | Multi-user | — | ✅ | ✅ |
-| Google SSO | — | ✅ | ✅ |
-| EU AI Act compliance | — | — | ✅ |
+| SSO | — | — | ✅ |
 | Audit trails | — | — | ✅ |
-| BigQuery analytics | — | — | ✅ |
+
+[Dashboard documentation →](./tools/dashboard/README.md)
+
+---
+
+## Tech Stack
+
+Built on Google Cloud for simplicity and scale:
+
+| Component | Technology |
+|-----------|------------|
+| Frontend | React 19 + TypeScript + Vite |
+| Styling | Tailwind CSS |
+| Hosting | Firebase Hosting / Vercel |
+| Database | Firestore (optional) |
+| Auth | Firebase Auth (optional) |
+| AI | Google Gemini API |
 
 ---
 
 ## Workshops
 
-Ready-made materials for your team:
+Run these with your team:
 
-| Workshop | Duration | Materials |
-|----------|----------|-----------|
-| [Build Your AI Portfolio](./workshops/workshop-1-portfolio.md) | 30 min | Slides, templates |
-| [Track AI Experiments](./workshops/workshop-2-experiments.md) | 45 min | Hands-on exercises |
-| [Deploy Your Dashboard](./workshops/workshop-3-deploy.md) | 30 min | Step-by-step guide |
-
----
-
-## Case Studies
-
-| Organisation | Challenge | Outcome |
-|--------------|-----------|---------|
-| [Housing Association](./case-studies/housing-compliance.md) | Managing AI across 8,000 properties | 23% cost reduction |
-| [Customer Service](./case-studies/customer-service.md) | 50K monthly queries | 50% effort reduction |
-| [Financial Services](./case-studies/financial-services.md) | Loan processing delays | 70% faster decisions |
+| Workshop | Duration | Outcome |
+|----------|----------|---------|
+| [Why AI Fails](./workshops/workshop-1-why-ai-fails.md) | 30 min | Understanding the problem |
+| [Self-Assessment](./workshops/workshop-2-assessment.md) | 45 min | Know your current state |
+| [Dashboard Setup](./workshops/workshop-3-dashboard.md) | 30 min | Working portfolio tracker |
 
 ---
 
-## Roadmap
+## Show Your Strata Level
 
-### Now
-- [x] Dashboard with 6 views
-- [x] Gemini document generation
-- [x] Firebase Hosting deployment
+Add to your project README:
 
-### Next
-- [ ] Firestore integration (persistence)
-- [ ] Firebase Auth (Google SSO)
-- [ ] Gemini Live API (voice interaction)
+```markdown
+[![Strata Level 1](https://img.shields.io/badge/Strata-Level%201-blue)](https://github.com/maree217/strata)
+```
+[![Strata Level 1](https://img.shields.io/badge/Strata-Level%201-blue)](https://github.com/maree217/strata)
 
-### Future
-- [ ] Cloud Functions (backend)
-- [ ] BigQuery (analytics)
-- [ ] Gemini Interaction API (meetings)
-- [ ] Mobile PWA
+```markdown
+[![Strata Level 2](https://img.shields.io/badge/Strata-Level%202-green)](https://github.com/maree217/strata)
+```
+[![Strata Level 2](https://img.shields.io/badge/Strata-Level%202-green)](https://github.com/maree217/strata)
+
+```markdown
+[![Strata Level 3](https://img.shields.io/badge/Strata-Level%203-gold)](https://github.com/maree217/strata)
+```
+[![Strata Level 3](https://img.shields.io/badge/Strata-Level%203-gold)](https://github.com/maree217/strata)
 
 ---
 
@@ -345,29 +244,11 @@ Ready-made materials for your team:
 
 We welcome contributions! See [CONTRIBUTING.md](./CONTRIBUTING.md).
 
-**Quick contributions:**
-- Star this repo if it helped you
-- Share with someone managing AI initiatives
-- Submit your organisation's case study
-- Improve documentation
-
----
-
-## About
-
-**Strata** was created by [Ram Maree](https://linkedin.com/in/rammaree), an AI Solutions Architect helping organisations build AI capability—not just AI projects.
-
-Built on:
-- Google Cloud Platform & Firebase
-- Google Gemini AI
-- React + TypeScript + Vite
-- Tailwind CSS
-
-Informed by:
-- Gartner AI Maturity Model
-- McKinsey Strategic AI Framework
-- MIT CISR Enterprise AI Research
-- 10+ real-world implementations
+Ways to help:
+- **Star** this repo to follow the framework
+- **Fork** it to use the dashboard
+- Share improvements to documentation
+- Add templates or workshop materials
 
 ---
 
@@ -377,23 +258,13 @@ MIT License — use freely, contribute back.
 
 ---
 
-## Get Started Now
+## About
 
-**Ready in 15 minutes:**
+Created by [Ram Maree](https://linkedin.com/in/rammaree).
 
-1. ⭐ Star this repo
-2. Clone and deploy to Firebase
-3. Add your first AI initiative
-4. Share with your team
-
-```bash
-git clone https://github.com/maree217/strata-ai-builder
-cd strata/dashboard
-npm install && npm run dev
-```
-
-**Questions?** [Open an issue](https://github.com/maree217/strata-ai-builder/issues) or [LinkedIn](https://linkedin.com/in/rammaree).
+Ram helps organisations operationalise AI using the Strata framework.
+[Contact for enterprise implementation](https://linkedin.com/in/rammaree).
 
 ---
 
-*Strata: See every layer of your AI portfolio.*
+**Star this repo** to follow the framework. **Fork it** to use the dashboard.
